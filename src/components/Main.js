@@ -3,13 +3,13 @@ require('styles/App.css');
 
 import React from 'react';
 
-let yeomanImage = require('../images/yeoman.png');
+let reactImage = require('../images/react-logo.png');
 
 class AppComponent extends React.Component {
   render() {
     return (
       <div className="index">
-        <img src={yeomanImage} alt="Yeoman Generator" />
+        <img src={reactImage} alt="ReactJS" />
         <div className="notice">ReactShop</div>
       </div>
     );
