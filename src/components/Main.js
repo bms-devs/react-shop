@@ -10,7 +10,7 @@ class AppComponent extends React.Component {
     return (
       <div className="index">
         <img src={reactImage} alt="ReactJS" />
-        <div className="notice">ReactShop</div>
+        <div className="notice">..:: ReactShop ::..</div>
       </div>
     );
   }
