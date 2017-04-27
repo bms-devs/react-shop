@@ -39,9 +39,7 @@ export default class AppComponent extends React.Component {
         <div className="main-section">
           <Products products={products} onProductSelect={(name) => this.productSelectHandler(name)} />
         </div>
-        <div className="cart">
-          <Cart products={this.state.selectedProducts} />
-        </div>
+        <Cart products={this.state.selectedProducts} />
       </div>
     );
   }
