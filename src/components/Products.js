@@ -1,17 +1,17 @@
 import React from 'react'
 
-const products = [
-    { name: 'Laptop', price: 3500 },
-    { name: 'Gaming desktop', price: 5000 },
-    { name: 'Tablet', price: 1500 },
-    { name: 'Cell phone', price: 1200 },
-    { name: 'Playstation', price: 999 }
-  ]
+const Products = (props) => {
+  return (
+    <ul>
+      { props.products.map(p => <Product key={p.name} name={p.name} price={p.price} onProductSelect={props.onProductSelect} />) }
+    </ul>
+  )
+}
 
-const Products = () => (
-  <ul>
-    { products.map(p => <li>Name: {p.name}, Price: {p.price}</li>) }
-  </ul>
+const Product = (props) => (
+  <li>
+    Name: {props.name}, Price: {props.price} <input type="checkbox" onChange={() => props.onProductSelect(props.name)} />
+  </li>
 )
 
 export default Products
