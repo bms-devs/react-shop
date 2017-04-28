@@ -19,3 +19,21 @@ body {
   border-width: 1px 0;
   background: #666;
 }
+
+.index {
+  height: 12vh;
+  position: absolute;
+}
+
+.main-section {
+  float: left;
+}
+
+.cart {
+  float: left;
+  height: 100%;
+}
+
+.cart-elements {
+  height: 100%;
+}
