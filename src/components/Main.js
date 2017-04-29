@@ -35,12 +35,13 @@ export default class AppComponent extends React.Component {
 
   render() {
     return (
-      <div className="index">
-        <div className="main-section">
-          <Products products={products} onProductSelect={(name) => this.productSelectHandler(name)} />
+      <section className="container">
+        <div className="products-card">
+          <Products products={products} onProductSelect={(name) => this.productSelectHandler(name)}/>
         </div>
-        <Cart products={this.state.selectedProducts} />
-      </div>
+        <div className="cart-card">
+          <Cart products={this.state.selectedProducts}/></div>
+      </section>
     );
   }
 }

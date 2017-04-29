@@ -1,4 +1,6 @@
 import React from 'react'
+import RaisedButton from 'material-ui/RaisedButton';
+import {Card, CardTitle, CardText, CardActions} from 'material-ui/Card';
 
 const Cart = (props) => {
 
@@ -7,14 +9,18 @@ const Cart = (props) => {
     .reduce((left, right) => left + right, 0)
 
   return (
-    <div className="cart">
-      <div className="cart-elements">
-        <ul>
-          { props.products.map(p => <li key={p.name}>{p.name} {p.price}</li>) }
-        </ul>
-      </div>
-      <div>SUM: {calculatePrice()}</div>
-    </div>
+      <Card className="card-margin">
+        <CardTitle title="Cart"/>
+        <CardText>
+          <ul>
+            { props.products.map(p => <li key={p.name}>{p.name} {p.price} $</li>) }
+          </ul>
+        </CardText>
+        <CardActions>
+          <RaisedButton label="Buy"/>
+          <strong>{calculatePrice()} $</strong>
+        </CardActions>
+      </Card>
   )
 }
 

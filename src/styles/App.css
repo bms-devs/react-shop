@@ -1,39 +1,20 @@
-/* Base Application Styles */
 body {
-  color: #fff;
-  background: #222;
+  font-family: 'Roboto', sans-serif;
 }
 
-.index img {
-  margin: 40px auto;
-  border-radius: 4px;
-  background: #fff;
-  display: block;
+.container {
+  width: 80%;
+  margin: auto;
+  padding: 10px;
 }
-
-.index .notice {
-  margin: 20px auto;
-  padding: 15px 0;
-  text-align: center;
-  border: 1px solid #000;
-  border-width: 1px 0;
-  background: #666;
-}
-
-.index {
-  height: 12vh;
-  position: absolute;
-}
-
-.main-section {
+.products-card {
+  width: 50%;
   float: left;
 }
-
-.cart {
-  float: left;
-  height: 100%;
+.cart-card {
+  margin-left: 50%;
 }
 
-.cart-elements {
-  height: 100%;
+.card-margin {
+  margin: 10px;
 }
