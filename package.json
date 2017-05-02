@@ -62,8 +62,10 @@
   },
   "dependencies": {
     "core-js": "^2.0.0",
+    "material-ui": "^0.17.4",
     "normalize.css": "^4.0.0",
     "react": "^15.0.0",
-    "react-dom": "^15.0.0"
+    "react-dom": "^15.0.0",
+    "react-tap-event-plugin": "^2.0.1"
   }
 }
