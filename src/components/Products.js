@@ -1,11 +1,11 @@
 import React from 'react'
 import Checkbox from 'material-ui/Checkbox'
-import {Card, CardTitle, CardText} from 'material-ui/Card';
+import {Card, CardText, CardHeader} from 'material-ui/Card';
 
 const ProductsCard = (props) => {
   return (
     <Card className="card-margin">
-      <CardTitle title="Products"/>
+      <CardHeader title={props.category}/>
       <CardText>
         <Products {...props}/>
       </CardText>
